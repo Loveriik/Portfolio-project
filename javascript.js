@@ -8,41 +8,28 @@ btnBurger.addEventListener('click', function() {
     navigation.classList.toggle('slide')
 })
 
-/* Section appearance on scrolling */
-
-window.addEventListener('scroll', reveal)
-
-function reveal() {
-    const reveals = document.querySelectorAll('.reveal')
-
-    for (let i = 0; i < reveals.length; i++) {
-        const windowHeight = window.innerHeight
-        const revealTop = reveals[i].getBoundingClientRect().top
-        const revealPoint = 150
-
-        if (revealTop < windowHeight - revealPoint) {
-            reveals[i].classList.add('active')
-        } else {
-            reveals[i].classList.remove('active')
-        }
-    }
-}
-
-
 /* Intersection observer */
 
-// const reveals = document.querySelectorAll('.reveal')
-// const appearOptions = {}
+const reveals = document.querySelectorAll('.reveal')
+const appearOptions = {
+    threshold:0.25,
+    rootMargin:'0px 0px -200px 0px'
+}
 
-// const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-//     entries.forEach(entry => {
-//         if (!entry.isIntersecting) {
-//             return
-//         } else {
-//             entry.target.classList.add('active')
-//         }
-//     })
-// }, appearOptions)
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return
+        } else {
+            entry.target.classList.add('active')
+            appearOnScroll.unobserve(entry.target)
+        }
+    })
+}, appearOptions)
+
+reveals.forEach(reveal => {
+    appearOnScroll.observe(reveal)
+})
 
 
 /* Switch project and landing */
