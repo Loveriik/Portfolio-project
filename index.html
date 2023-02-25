@@ -63,16 +63,16 @@
         </div>
     </section>
 
-    <section class="background reveal">
+    <section class="background">
         <div class="skills" id="skills">
-            <div>
+            <div class="motion from-left">
                 <h4 class="skills-h4 header-h4">&ltskills&gt</h4>
                 <h2 class="skills-h2 header-h2">Tools & Languages</h2>
                 <p class="skills-p paragraph">I'm a developer with experience in many different languages, frameworks
                     <br>and technologies. I'm always looking for new challenges to tackle.
                 </p>
             </div>
-            <div class="skills-icons-container">
+            <div class="skills-icons-container motion from-right">
                 <div class="skills-grid-cell">
                     <img src="./tools/html.png" alt="html icon" class="skills-icon">
                     <h3 class="skills-icon-caption">HTML</h3>
@@ -285,7 +285,8 @@
     </section>
 
     <section class="background form-section" id="contact">
-        <form action="" class="form">
+        <form action="https://formsubmit.co/sancho2140@gmail.com" method="POST" class="form">
+            <input type="hidden" name="_captcha" value="false">
             <div class="form-text-container">
                 <h4 class="form-h4 header-h4">&ltcontact&gt</h4>
                 <p class="paragraph form-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio facilis ad illum blanditiis culpa nam, recusandae, veniam cumque dicta sit voluptate deserunt! Ea quidem et eum nihil sint reiciendis!</p>
@@ -294,13 +295,13 @@
 
             <div class="form-input-container">
                 <label for="text-input" class="form-label">Name</label>
-                <input type="text" id="text-input" class="form-input">
+                <input type="text" name="name" id="text-input" class="form-input">
                 
                 <label for="form-mail" class="form-label">E-mail</label>
-                <input type="mail" id="form-mail" class="form-input">
+                <input type="email" name="email" id="form-mail" class="form-input">
 
                 <label for="form-textArea" class="form-label">Message</label>
-                <textarea name="" id="form-textArea" cols="30" rows="5" class="form-input"></textarea>
+                <textarea name="message" id="form-textArea" cols="30" rows="5" class="form-input"></textarea>
                 <input type="submit" value="Submit" class="submit-btn">
             </div>
         </form>

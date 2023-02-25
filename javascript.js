@@ -11,6 +11,8 @@ btnBurger.addEventListener('click', function() {
 /* Intersection observer */
 
 const reveals = document.querySelectorAll('.reveal')
+const motions = document.querySelectorAll('.motion')
+
 const appearOptions = {
     threshold:0.25,
     rootMargin:'0px 0px -200px 0px'
@@ -29,6 +31,10 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 
 reveals.forEach(reveal => {
     appearOnScroll.observe(reveal)
+})
+
+motions.forEach(entry => {
+    appearOnScroll.observe(entry)
 })
 
 
