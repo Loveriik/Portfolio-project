@@ -461,7 +461,7 @@ body > * {
 /* *Form section */
 
 .form-section {
-    padding:100px 0; 
+    padding:100px 0 60px 0; 
 }
 
 .form {
@@ -519,6 +519,57 @@ body > * {
     font-size:20px;
     color: var(--first-color);
     font-family:'Montserrat', sans-serif;
+}
+
+.submit-btn {
+    margin-top:40px;
+    align-self: end;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--second-color);
+    transition: all 300ms ease-in;
+}
+
+.submit-btn:hover {
+    background-color: var(--second-color);
+    color:var(--first-color);
+    transform: scale(1.1);
+}
+
+/* *Footer */
+
+.footer {
+    padding-top:40px;
+    margin: 50px 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--first-color);
+}
+
+.footer-logo {
+    color:var(--first-color);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links-footer {
+    margin:0;
+}
+
+.footer-link {
+    color:var(--first-color);
+    transition: all 300ms ease-in;
+}
+
+.link:hover {
+    color:var(--second-color);
+    transform: translateY(-5px);
 }
 
 
@@ -591,7 +642,7 @@ body > * {
 
     /* ?Skills section */
 
-    .skills-background {
+    .background {
         padding: 0 40px;
     }
 
@@ -599,6 +650,30 @@ body > * {
         flex-direction: column;
         padding: 100px 0;
         gap:70px;
+    }
+
+    /* ? Contact section */
+
+    .form-section {
+        padding:60px 0; 
+    }
+ 
+    .form {
+        padding:0 40px;
+        display: flex;
+        flex-direction: column;
+        align-items:normal;
+    }
+    
+    .form-img {
+        margin-top:30px;
+        display: block;
+        margin-inline:auto;
+    }
+    
+    .footer {
+        margin: 50px 40px 0 40px;
+        border:none;
     }
 
 }
@@ -672,7 +747,7 @@ body > * {
         row-gap: 50px;
     }
 
-    .skills-background {
+    .background {
         padding: 0 30px;
     }
 
@@ -698,9 +773,6 @@ body > * {
     .projects-buttons {
         display: none;
     }
-
-    /* !New adjustments */
-
 
     .projects-container {
         display: none;
@@ -743,6 +815,39 @@ body > * {
         right:80px;
     }
 
+    /* ?Contact section */
+
+    .form {
+        padding:0 30px;
+    }
+
+    .form-section {
+        padding:40px 0;
+        margin-top:50px;
+    }
+
+    .form-img {
+        width:300px;
+    }
+
+    .form-label {
+        margin-left:20px;
+        font-size:18px;
+    }
+
+    .form-input {
+        font-size:16px;
+    }
+    
+    .submit-btn {
+        padding: 5px 10px;
+        font-size:16px;
+    }
+
+    .footer {
+        margin: 50px 30px 0 30px;
+    }
+
 }
 
 @media screen and (max-width:360px) { 
@@ -756,5 +861,13 @@ body > * {
 
     .nextBtn {
         right:40px;
+    }
+
+    .footer-logo {
+        font-size:16px;
+    }
+
+    .links-footer {
+        font-size:14px;
     }
 }
