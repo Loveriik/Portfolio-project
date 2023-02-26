@@ -518,6 +518,30 @@ body > * {
     flex:1;
 }
 
+.input-box {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#text-input.error {
+    border-bottom: 2px solid crimson;
+}
+#form-mail.error {
+    border-bottom: 2px solid crimson;
+}
+
+.error-message {
+    margin-top:10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:16px;
+    color:rgb(97, 4, 23);
+}
+
+.input-box:not(:first-child) {
+    margin-top:30px;
+}
+
 .form-label {
     margin-left:40px;
     color:var(--first-color);
@@ -525,10 +549,6 @@ body > * {
     font-family: 'Montserrat', sans-serif;
     margin-bottom:20px;
     text-transform: uppercase;
-}
-
-.form-label:not(:first-child) {
-    margin-top:30px;
 }
 
 .form-input {

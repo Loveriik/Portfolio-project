@@ -285,8 +285,7 @@
     </section>
 
     <section class="background form-section" id="contact">
-        <form action="https://formsubmit.co/sancho2140@gmail.com" method="POST" class="form">
-            <input type="hidden" name="_captcha" value="false">
+        <form class="form">       
             <div class="form-text-container">
                 <h4 class="form-h4 header-h4">&ltcontact&gt</h4>
                 <p class="paragraph form-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio facilis ad illum blanditiis culpa nam, recusandae, veniam cumque dicta sit voluptate deserunt! Ea quidem et eum nihil sint reiciendis!</p>
@@ -294,14 +293,24 @@
             </div>
 
             <div class="form-input-container">
-                <label for="text-input" class="form-label">Name</label>
-                <input type="text" name="name" id="text-input" class="form-input">
-                
-                <label for="form-mail" class="form-label">E-mail</label>
-                <input type="email" name="email" id="form-mail" class="form-input">
+                <div class="input-box">
+                    <label for="text-input" class="form-label">Name</label>
+                    <input type="text" name="name" id="text-input" class="form-input">
+                    <div class="name-error error-message"></div>
+                </div>
+         
+                <div class="input-box">
+                    <label for="form-mail" class="form-label">E-mail</label>
+                    <input type="text" name="email" id="form-mail" class="form-input">
+                    <div class="email-error error-message"></div>
+                </div>
 
-                <label for="form-textArea" class="form-label">Message</label>
-                <textarea name="message" id="form-textArea" cols="30" rows="5" class="form-input"></textarea>
+                <div class="input-box">
+                    <label for="form-textArea" class="form-label">Message</label>
+                    <textarea name="message" id="form-textArea" cols="30" rows="5" class="form-input"></textarea>
+                    <div class="message-error"></div>
+                </div>
+
                 <input type="submit" value="Submit" class="submit-btn">
             </div>
         </form>
@@ -314,6 +323,5 @@
             </div>
         </footer>
     </section>
-
 </body>
 </html>
