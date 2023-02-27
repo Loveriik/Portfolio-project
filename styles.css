@@ -87,7 +87,7 @@ body > * {
     width:50px;
     height:50px;
     position: fixed;
-    bottom:60px;
+    bottom:80px;
     right:30px;
     opacity:0.6;
     background-color: none;
@@ -316,6 +316,7 @@ body > * {
     justify-content: space-between;
     align-items: center;
     padding: 100px 0;
+    overflow:hidden;
 }
 
 .skills-h4 {
@@ -662,12 +663,16 @@ body > * {
         top:0;
         right:0;
         flex-direction: column;
-        background-color: rgba(0 0 0 /.2);
-        width:300px;
+        background-color: rgba(0 0 0 /.9);
+        width:100vw;
         min-height:100vh;;
         align-items: center;
         justify-content: center;
-        transform: translateX(300px);
+        transform: translateX(100%);
+    }
+
+    .nav-link {
+        color:var(--first-color);
     }
 
     /* ? Introduction */
@@ -718,6 +723,37 @@ body > * {
         border:none;
     }
 
+    /* ? Scroll up btn */
+
+    .scroll-up {
+        background-color: var(--second-color);
+        opacity:0.4;
+        color:var(--first-color);
+    }
+
+
+    /* ? Disabling all hover effects */
+    
+    .scroll-up:hover {
+        background-color: transparent;
+        opacity:0.6;
+        color:var(--second-color);
+        transform: scale(1);
+        border: 1px solid var(--second-color);
+    }
+    
+    .scroll-up:active {
+        transform: scale(0.9);
+    }
+
+    .project-card:hover {
+        transform: scale(1);
+    }
+
+    .nav-link:hover::after {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
 }
 
 @media screen and (max-width:420px) {

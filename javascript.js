@@ -8,6 +8,18 @@ btnBurger.addEventListener('click', function() {
     navigation.classList.toggle('slide')
 })
 
+
+/* Closing burger after using nav links */
+
+const navLinks = document.querySelectorAll('.nav-link')
+
+navLinks.forEach( link => {
+    link.addEventListener('click', function() {
+        btnBurger.classList.remove('open')
+        navigation.classList.remove('slide')
+    })
+})
+
 /* Intersection observer */
 
 const reveals = document.querySelectorAll('.reveal')
