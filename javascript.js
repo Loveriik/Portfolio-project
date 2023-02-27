@@ -79,47 +79,52 @@ window.onscroll = function() {
 }
 
 /* Form validation */
-const form = document.querySelector('.form')
+// const form = document.querySelector('.form')
+// const btn = document.querySelector('.submit-btn')
 
-const textInput = document.querySelector('#text-input')
-const textError = document.querySelector('.name-error')
-const mailInput = document.querySelector('#form-mail')
-const mailError = document.querySelector('.email-error')
-const message = document.querySelector('.form-input')
+// const textInput = document.querySelector('#text-input')
+// const textError = document.querySelector('.name-error')
+// const mailInput = document.querySelector('#form-mail')
+// const mailError = document.querySelector('.email-error')
+// const message = document.querySelector('.form-input')
 
-function errorRemover(errorStyle, errorText) {
-    errorStyle.classList.remove('error')
-    errorText.textContent = ''
-}
+// function errorRemover(errorStyle, errorText) {
+//     errorStyle.classList.remove('error')
+//     errorText.textContent = ''
+// }
 
-function setError(inputType, errorText, message) {
-    inputType.classList.add('error')
-    errorText.textContent = message
-}
+// function setError(inputType, errorText, message) {
+//     inputType.classList.add('error')
+//     errorText.textContent = message
+// }
 
 
-function formValidation(e) {
-    e.preventDefault()
+// function formValidation(e) {
+//     e.preventDefault()
 
-    if (textInput.value === '') {
-        setError(textInput, textError, 'Please, enter your name and surname')
-    } else {
-        errorRemover(textInput, textError)
-    }
+//     if (textInput.value === '') {
+//         setError(textInput, textError, 'Please, enter your name and surname')
+//         return false
+//     } else {
+//         errorRemover(textInput, textError)
+//     }
 
-    if (mailInput.value === '') {
-        setError(mailInput, mailError, 'Please, enter your e-mail')
-    } else if (!mailInput.value.includes('@')) {
-        setError(mailInput, mailError, 'Your e-mail should contain @ sign')
-    } else {
-        errorRemover(mailInput, mailError)
-    }
+//     if (mailInput.value === '') {
+//         setError(mailInput, mailError, 'Please, enter your e-mail')
+//         return false
+//     } else if (!mailInput.value.includes('@')) {
+//         setError(mailInput, mailError, 'Your e-mail should contain @ sign')
+//         return false
+//     } else {
+//         errorRemover(mailInput, mailError)
+//     }
 
-    if (textInput.value === '' || mailInput.value === '' || !mailInput.value.includes('@')) {
-        return
-    }
+//     if (textInput.value === '' || mailInput.value === '' || !mailInput.value.includes('@')) {
+//         return false
+//     }
     
-}
+// }
 
-form.addEventListener('submit', formValidation)
 
+// form.addEventListener('submit', formValidation)
+// btn.addEventListener('submit', formValidation)
