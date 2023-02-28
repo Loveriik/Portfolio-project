@@ -136,13 +136,39 @@ const form = document.querySelector('.form')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
+    // Email.send({
+    //     SecureToken : "51244384-e052-4cc5-b4de-03a172553ab5",
+    //     To : 'sancho2140@gmail.com',
+    //     From : "sancho2140@gmail.com",
+    //     Subject : "This is the subject",
+    //     Body : "And this is the body"
+    // }).then(
+    //   message => alert(message)
+    // );
+
+    const textInput = document.querySelector('#text-input')
+    const mailInput = document.querySelector('#form-mail')
+    const message = document.querySelector('#form-textArea')
+
+    let body =`
+    <b>Name: </b> ${textInput.value}
+    <br>
+    <b>Email: </b> ${mailInput.value}
+    <br>
+    <br>
+    <b>Message: </b> ${message.value}
+    <br>
+    `
+
     Email.send({
-        SecureToken : "51244384-e052-4cc5-b4de-03a172553ab5",
+        Host : "smtp.elasticemail.com",
+        Username : "sancho2140@gmail.com",
+        Password : "8C4F712E3DADB3E2DB5B9921525EDF762B83",
         To : 'sancho2140@gmail.com',
         From : "sancho2140@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        Subject : 'Portfolio form: E-mail from ' + mailInput.value,
+        Body : body
     }).then(
-      message => alert(message)
+        window.open('https://loveriik.github.io/Successfull-email-sending/')
     );
 })
