@@ -78,77 +78,58 @@ window.onscroll = function() {
     }
 }
 
-/* Form validation */
-// const form = document.querySelector('.form')
-// const btn = document.querySelector('.submit-btn')
 
-// const textInput = document.querySelector('#text-input')
-// const textError = document.querySelector('.name-error')
-// const mailInput = document.querySelector('#form-mail')
-// const mailError = document.querySelector('.email-error')
-// const message = document.querySelector('.form-input')
+/* Form validation  */
 
-// function errorRemover(errorStyle, errorText) {
-//     errorStyle.classList.remove('error')
-//     errorText.textContent = ''
-// }
+function errorRemover(errorStyle, errorText) {
+    errorStyle.classList.remove('error')
+    errorText.textContent = ''
+}
 
-// function setError(inputType, errorText, message) {
-//     inputType.classList.add('error')
-//     errorText.textContent = message
-// }
+function setError(inputType, errorText, message) {
+    inputType.classList.add('error')
+    errorText.textContent = message
+}
 
-
-// function formValidation(e) {
-//     e.preventDefault()
-
-//     if (textInput.value === '') {
-//         setError(textInput, textError, 'Please, enter your name and surname')
-//         return false
-//     } else {
-//         errorRemover(textInput, textError)
-//     }
-
-//     if (mailInput.value === '') {
-//         setError(mailInput, mailError, 'Please, enter your e-mail')
-//         return false
-//     } else if (!mailInput.value.includes('@')) {
-//         setError(mailInput, mailError, 'Your e-mail should contain @ sign')
-//         return false
-//     } else {
-//         errorRemover(mailInput, mailError)
-//     }
-
-//     if (textInput.value === '' || mailInput.value === '' || !mailInput.value.includes('@')) {
-//         return false
-//     }
-    
-// }
-
-
-// form.addEventListener('submit', formValidation)
-// btn.addEventListener('submit', formValidation)
-
-/* Form  */
 
 const form = document.querySelector('.form')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    // Email.send({
-    //     SecureToken : "51244384-e052-4cc5-b4de-03a172553ab5",
-    //     To : 'sancho2140@gmail.com',
-    //     From : "sancho2140@gmail.com",
-    //     Subject : "This is the subject",
-    //     Body : "And this is the body"
-    // }).then(
-    //   message => alert(message)
-    // );
-
     const textInput = document.querySelector('#text-input')
+    const textError = document.querySelector('.name-error')
     const mailInput = document.querySelector('#form-mail')
+    const mailError = document.querySelector('.email-error')
     const message = document.querySelector('#form-textArea')
+
+    const module = document.querySelector('.module')
+    const moduleCloseBtn = document.querySelector('.module-btn')
+
+    moduleCloseBtn.addEventListener('click', () => {
+        module.style.display = 'none'
+    })
+
+    if (textInput.value === '') {
+        setError(textInput, textError, 'Please, enter your name and surname')
+
+    } else {
+        errorRemover(textInput, textError)
+    }
+
+    if (mailInput.value === '') {
+        setError(mailInput, mailError, 'Please, enter your e-mail')
+
+    } else if (!mailInput.value.includes('@')) {
+        setError(mailInput, mailError, 'Your e-mail should contain @ sign')
+
+    } else {
+        errorRemover(mailInput, mailError)
+    }
+
+    if (textInput.value === '' || mailInput.value === '' || !mailInput.value.includes('@')) {
+        return false
+    }
 
     let body =`
     <b>Name: </b> ${textInput.value}
@@ -159,7 +140,6 @@ form.addEventListener('submit', (e) => {
     <b>Message: </b> ${message.value}
     <br>
     `
-
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "sancho2140@gmail.com",
@@ -169,6 +149,7 @@ form.addEventListener('submit', (e) => {
         Subject : 'Portfolio form: E-mail from ' + mailInput.value,
         Body : body
     }).then(
-        window.open('https://loveriik.github.io/Successfull-email-sending/')
+        // window.open('https://loveriik.github.io/Successfull-email-sending/')
+        module.style.display = 'grid'
     );
 })

@@ -286,6 +286,15 @@
     </section>
 
     <section class="background form-section" id="contact">
+        <div class="module">
+            <div class="messsage-container">
+                <button class="module-btn">Close</button>
+                <h2 class="message-h2">E-mail was successfully sent!</h2>
+                <p class="message-p">Thank you for your interest. I will contact you as soon as I see your mail.
+                    <br>
+                    <br>Have a nice day!</p>
+            </div>
+        </div>
         <form class="form"> 
             <div class="form-text-container">
                 <h4 class="form-h4 header-h4">&ltcontact&gt</h4>
@@ -301,20 +310,20 @@
             <div class="form-input-container">
                 <div class="input-box">
                     <label for="text-input" class="form-label">Name</label>
-                    <input type="text" id="text-input" class="form-input" required>
-                    <!-- <div class="name-error error-message"></div> -->
+                    <input type="text" id="text-input" class="form-input">
+                    <div class="name-error error-message"></div>
                 </div>
          
                 <div class="input-box">
                     <label for="form-mail" class="form-label">E-mail</label>
-                    <input type="text" id="form-mail" class="form-input" required>
-                    <!-- <div class="email-error error-message"></div> -->
+                    <input type="text" id="form-mail" class="form-input">
+                    <div class="email-error error-message"></div>
                 </div>
 
                 <div class="input-box">
                     <label for="form-textArea" class="form-label">Message</label>
-                    <textarea id="form-textArea" cols="30" rows="5" class="form-input" required></textarea>
-                    <!-- <div class="message-error"></div> -->
+                    <textarea id="form-textArea" cols="30" rows="5" class="form-input"></textarea>
+                    <div class="message-error"></div>
                 </div>
 
                 <input type="submit" value="Submit" class="submit-btn">
