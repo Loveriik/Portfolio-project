@@ -128,3 +128,21 @@ window.onscroll = function() {
 
 // form.addEventListener('submit', formValidation)
 // btn.addEventListener('submit', formValidation)
+
+/* Form  */
+
+const form = document.querySelector('.form')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    Email.send({
+        SecureToken : "51244384-e052-4cc5-b4de-03a172553ab5",
+        To : 'sancho2140@gmail.com',
+        From : "sancho2140@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+})
