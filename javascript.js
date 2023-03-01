@@ -149,7 +149,6 @@ form.addEventListener('submit', (e) => {
         Subject : 'Portfolio form: E-mail from ' + mailInput.value,
         Body : body
     }).then(
-        // window.open('https://loveriik.github.io/Successfull-email-sending/')
         module.style.display = 'grid'
     );
 })
