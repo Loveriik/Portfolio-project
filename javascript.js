@@ -49,7 +49,6 @@ motions.forEach(entry => {
     appearOnScroll.observe(entry)
 })
 
-
 /* Switch project and landing */
 
 function landingChange(value) {
@@ -110,6 +109,13 @@ form.addEventListener('submit', (e) => {
         module.style.display = 'none'
     })
 
+    function mailSuccess() {
+        module.style.display = 'grid'
+        textInput.value = ''
+        mailInput.value = ''
+        message.value = ''
+    }
+
     if (textInput.value === '') {
         setError(textInput, textError, 'Please, enter your name and surname')
 
@@ -149,6 +155,6 @@ form.addEventListener('submit', (e) => {
         Subject : 'Portfolio form: E-mail from ' + mailInput.value,
         Body : body
     }).then(
-        module.style.display = 'grid'
+        mailSuccess()
     );
 })

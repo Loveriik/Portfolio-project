@@ -494,6 +494,7 @@ body > * {
     font-size:18px;
     margin-top:20px;
     color:var(--first-color);
+    height: 220px;
 }
 
 .card-btn-container {
