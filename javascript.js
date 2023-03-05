@@ -96,6 +96,10 @@ const form = document.querySelector('.form')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
+    let emailStatus = null
+    let textStatus = null
+    const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
     const textInput = document.querySelector('#text-input')
     const textError = document.querySelector('.name-error')
     const mailInput = document.querySelector('#form-mail')
@@ -118,22 +122,24 @@ form.addEventListener('submit', (e) => {
 
     if (textInput.value === '') {
         setError(textInput, textError, 'Please, enter your name and surname')
-
+        textStatus = false
     } else {
         errorRemover(textInput, textError)
+        textStatus = true
     }
 
     if (mailInput.value === '') {
         setError(mailInput, mailError, 'Please, enter your e-mail')
-
-    } else if (!mailInput.value.includes('@')) {
-        setError(mailInput, mailError, 'Your e-mail should contain @ sign')
-
+        emailStatus = false
+    } else if (!mailInput.value.match(mailformat)) {
+        setError(mailInput, mailError, 'Please enter a valid e-mail')
+        emailStatus = false
     } else {
         errorRemover(mailInput, mailError)
+        emailStatus = true
     }
 
-    if (textInput.value === '' || mailInput.value === '' || !mailInput.value.includes('@')) {
+    if (!textStatus || !emailStatus) {
         return false
     }
 
