@@ -152,6 +152,9 @@ form.addEventListener('submit', (e) => {
     <b>Message: </b> ${message.value}
     <br>
     `
+
+    /* Displaying your password is not safe and I know it but for the purpose of this webpage I do not want to create a remote server */
+
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "sancho2140@gmail.com",

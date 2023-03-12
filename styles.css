@@ -465,7 +465,6 @@ body > * {
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0 0 0 /.3);
     background-color: #18a999;
-    margin-inline:auto;
     transition: transform 100ms ease-in;
 }
 
