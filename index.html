@@ -1,343 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="javascript.js" defer></script>
     <script src="https://smtpjs.com/v3/smtp.js" defer></script>
-    <script src="https://kit.fontawesome.com/a3758c3227.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a3758c3227.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <title>My portfolio</title>
-</head>
-<body>
-    <a href="#navigation" class="btnUp"><button class="scroll-up"><i class="fa-solid fa-arrow-up"></i></button></a>
+  </head>
+  <body>
+    <a href="#navigation" class="btnUp"
+      ><button class="scroll-up"><i class="fa-solid fa-arrow-up"></i></button
+    ></a>
     <nav id="navigation" class="navigation">
-        <span class="logo">AleksanderLavrov</span>
-        <div class="burger-menu" id="burger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </div>
-        <ul class="nav-list">
-            <li><a href="#introduction" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+      <span class="logo">AleksanderLavrov</span>
+      <div class="burger-menu" id="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#introduction" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
 
     <section id="about" class="about">
-        <div class="about-text-container">
-            <h1 class="about-h1">
-                Hello there, <span class="about-textHiglight">I'm Aleks</span>
-                <br>I'm a <span class="about-textHiglight about-animation">&lt/frontend developer&gt</span>
-            </h1>
-            <p class="about-p paragraph">
-                I am a former heavy industry engineer who decided to get into <br>the world of web development. I am a lifelong learner and always 
-                <br>look for new challenges to tackle.
-            </p>
-            <div class="links-container">
-                <a href="https://www.linkedin.com/in/aleksandr-lavrov/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl link"></i></a>
-                <a href="https://github.com/Loveriik" target="_blank"><i class="fa-brands fa-github fa-2xl link"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100081223609217" target="_blank"><i class="fa-brands fa-facebook fa-2xl link"></i></a>
-            </div>
+      <div class="about-text-container">
+        <h1 class="about-h1">
+          Hello there, <span class="about-textHiglight">I'm Aleks</span>
+          <br />I'm a
+          <span class="about-textHiglight about-animation"
+            >&lt/frontend developer&gt</span
+          >
+        </h1>
+        <p class="about-p paragraph">
+          I am a former heavy industry engineer who decided to get into
+          <br />the world of web development. I am a lifelong learner and always
+          <br />look for new challenges to tackle.
+        </p>
+        <div class="links-container">
+          <a
+            href="https://www.linkedin.com/in/aleksandr-lavrov/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2xl link"></i
+          ></a>
+          <a href="https://github.com/Loveriik" target="_blank"
+            ><i class="fa-brands fa-github fa-2xl link"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100081223609217"
+            target="_blank"
+            ><i class="fa-brands fa-facebook fa-2xl link"></i
+          ></a>
         </div>
-        <div class="image-container">
-            <img src="./images/Avatar.jpg" alt="my photo">
-        </div>
+      </div>
+      <div class="image-container">
+        <img src="./images/Avatar.jpg" alt="my photo" />
+      </div>
     </section>
 
     <section class="introduction reveal" id="introduction">
-        <div>
-            <h4 class="header-h4 introduction-h4">&ltabout&gt</h4>
-            <p class="paragraph introduction-par">I have been always mesmerised by the world of video games and web activity. Webpages with great animations and designs pushed me to try a new field in my life.</p>
-            <p class="paragraph introduction-par">As a self-study web developer, I started my journey on the <span class="study study1">FreeCodeCamp</span>. There I learned all the basics and made a few web landings of my own. After this, I passed courses at <br> <span class="study">ZTM Academy</span> and <span class="study">Udemy</span>. It helped me polish my JS skills and build my first React project.</p>
-            <p class="paragraph introduction-par">My next step is to get a front-end dev position to be able to achieve a new hights side by side with experienced team members</p>
-        </div>
-        <div class="introduction-img-container">
-            <img src="./images/undraw_freelancer_re_irh4.svg">
-        </div>
+      <div>
+        <h4 class="header-h4 introduction-h4">&ltabout&gt</h4>
+        <p class="paragraph introduction-par">
+          I have been always mesmerised by the world of video games and web
+          activity. Webpages with great animations and designs pushed me to try
+          a new field in my life.
+        </p>
+        <p class="paragraph introduction-par">
+          As a self-study web developer, I started my journey on the
+          <span class="study study1">FreeCodeCamp</span>. There I learned all
+          the basics and made a few web landings of my own. After this, I passed
+          courses at <br />
+          <span class="study">ZTM Academy</span> and
+          <span class="study">Udemy</span>. It helped me polish my JS skills and
+          build my first React project.
+        </p>
+        <p class="paragraph introduction-par">
+          My next step is to get a front-end dev position to be able to achieve
+          a new hights side by side with experienced team members
+        </p>
+      </div>
+      <div class="introduction-img-container">
+        <img src="./images/undraw_freelancer_re_irh4.svg" />
+      </div>
     </section>
 
     <section class="background">
-        <div class="skills" id="skills">
-            <div class="motion from-left">
-                <h4 class="skills-h4 header-h4">&ltskills&gt</h4>
-                <h2 class="skills-h2 header-h2">Tools & Languages</h2>
-                <p class="skills-p paragraph"> During my journey I have learned a lot of new tools, languages and applications. 
-                    <br>Here is a list of them.
-                </p>
-            </div>
-            <div class="skills-icons-container motion from-right">
-                <div class="skills-grid-cell">
-                    <img src="./tools/html.png" alt="html icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">HTML</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/css-3.png" alt="CSS icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">CSS</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/js.png" alt="Javascript icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">Javascript</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/Redux.png" alt="Redux icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">Redux</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/github.png" alt="Github icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">Github</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/react.png" alt="React icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">React</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/api.png" alt="Api icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">Api</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/responsive.png" alt="Responsive web design icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">Responsive web design</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/visual-studio.png" alt="Visual-studio icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">Visual-studio</h3>
-                </div>
-                <div class="skills-grid-cell">
-                    <img src="./tools/command-line.png" alt="Command line icon" class="skills-icon">
-                    <h3 class="skills-icon-caption">Command line</h3>
-                </div>
-            </div>
+      <div class="skills" id="skills">
+        <div class="motion from-left">
+          <h4 class="skills-h4 header-h4">&ltskills&gt</h4>
+          <h2 class="skills-h2 header-h2">Tools & Languages</h2>
+          <p class="skills-p paragraph">
+            During my journey I have learned a lot of new tools, languages and
+            applications. <br />Here is a list of them.
+          </p>
         </div>
+        <div class="skills-icons-container motion from-right">
+          <div class="skills-grid-cell">
+            <img src="./tools/html.png" alt="html icon" class="skills-icon" />
+            <h3 class="skills-icon-caption">HTML</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img src="./tools/css-3.png" alt="CSS icon" class="skills-icon" />
+            <h3 class="skills-icon-caption">CSS</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img
+              src="./tools/js.png"
+              alt="Javascript icon"
+              class="skills-icon"
+            />
+            <h3 class="skills-icon-caption">Javascript</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img src="./tools/react.png" alt="React icon" class="skills-icon" />
+            <h3 class="skills-icon-caption">React</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img src="./tools/Redux.png" alt="Redux icon" class="skills-icon" />
+            <h3 class="skills-icon-caption">Redux</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img
+              src="./tools/github.png"
+              alt="Github icon"
+              class="skills-icon"
+            />
+            <h3 class="skills-icon-caption">Github</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img src="./tools/api.png" alt="Api icon" class="skills-icon" />
+            <h3 class="skills-icon-caption">Api</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img
+              src="./tools/responsive.png"
+              alt="Responsive web design icon"
+              class="skills-icon"
+            />
+            <h3 class="skills-icon-caption">Responsive web design</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img src="./tools/sass.png" alt="Sass icon" class="skills-icon" />
+            <h3 class="skills-icon-caption">Sass</h3>
+          </div>
+          <div class="skills-grid-cell">
+            <img src="./tools/mysql.png" alt="Mysql icon" class="skills-icon" />
+            <h3 class="skills-icon-caption">MySql</h3>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="projects reveal">
-        <h4 class="projects-h4 header-h4">&ltprojects&gt</h4>
-        <div class="projects-buttons">
-            <button class="option-btn open-projects" onclick="landingChange('projects')">View Projects</button>
-            <button class="option-btn open-landing" onclick="landingChange('landing')">View landings</button>
-        </div>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="./projects-thumbnails/calculator2.png" alt="calculator pic" class="project-image">
-                <div class="card-summary">
-                    <h3 class="card-title">Calculator</h3>
-                    <p class="card-paragraph">That is the first app I have created myself. After I grasped the basics of CSS, HTML and basic DOM manipuations I deciced to use these knowledge on practise and came up with a modern calculator project. </p>
-                    <div class="card-btn-container">
-                        <a href="https://loveriik.github.io/Calculator-app/" target="_blank"><button class="card-btn">Live Demo</button></a>
-                        <a href="https://github.com/Loveriik/Calculator-app" target="_blank"><button class="card-btn">Github</button></a>
-                    </div>
-                </div>
+      <h4 class="projects-h4 header-h4">&ltprojects&gt</h4>
+      <div class="projects-buttons">
+        <button
+          class="option-btn open-projects"
+          onclick="landingChange('projects')"
+        >
+          View Projects
+        </button>
+        <button
+          class="option-btn open-landing"
+          onclick="landingChange('landing')"
+        >
+          View landings
+        </button>
+      </div>
+      <div class="projects-container">
+        <div class="project-card">
+          <img
+            src="./projects-thumbnails/calculator2.png"
+            alt="calculator pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">Calculator</h3>
+            <div class="card-tag-container">
+              <span class="card-tag">JS</span>
+              <span class="card-tag">DOM</span>
             </div>
-
-            <div class="project-card">
-                <img src="./projects-thumbnails/weather.png" alt="weather widget pic" class="project-image">
-                <div class="card-summary">
-                    <h3 class="card-title">Weather widget</h3>
-                    <p class="card-paragraph">This project is all about using APIs. Here I used two APIs: one to get a weather forecast and another one to get coordinates of a city the user inputs.</p>
-                    <div class="card-btn-container">
-                        <a href="https://loveriik.github.io/Weather-widget/" target="_blank"><button class="card-btn">Live Demo </button></a>
-                        <a href="https://github.com/Loveriik/Weather-widget" target="_blank"><button class="card-btn">Github</button></a>
-                    </div>
-                </div>
+            <p class="card-paragraph">
+              That is the first app I have created myself. After I grasped the
+              basics of CSS, HTML and basic DOM manipuations I deciced to use
+              these knowledge on practise and came up with a modern calculator
+              project.
+            </p>
+            <div class="card-btn-container">
+              <a
+                href="https://loveriik.github.io/Calculator-app/"
+                target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a
+                href="https://github.com/Loveriik/Calculator-app"
+                target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
             </div>
-
-            <div class="project-card">
-                <img src="./projects-thumbnails/flip-cards.png" alt="flip game pic" class="project-image">
-                <div class="card-summary">
-                    <h3 class="card-title">Flip cards</h3>
-                    <p class="card-paragraph">This project was inspired by my interest in video games. I was curious to see if I can use JS to create a simple mobile game. When the code was running successfully I added my personal cards design affected by Japanese culture.</p>
-                    <div class="card-btn-container">
-                        <a href="https://loveriik.github.io/Flip-cards/" target="_blank"><button class="card-btn">Live Demo</button></a>
-                        <a href="https://github.com/Loveriik/Flip-cards" target="_blank"><button class="card-btn">Github</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="./landing-thumbnails/webpage5.png" alt="todo app pic" class="project-image">
-                <div class="card-summary">
-                    <h3 class="card-title">Cake shop</h3>
-                    <div class="card-tag-container">
-                        <span class="card-tag">React</span>
-                        <span class="card-tag">Redux</span>
-                    </div>
-                    <p class="card-paragraph">Cake shop webpage built with the help of React and Redux. Choose the best cake printer/training program for you and don't forget to checkout!</p>
-                    <div class="card-btn-container">
-                        <a href="https://loveriik.github.io/cake-shop/" target="_blank"><button class="card-btn">Live Demo</button></a>
-                        <a href="https://github.com/Loveriik/cake-shop" target="_blank"><button class="card-btn">Github</button></a>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
 
-        <div class="landing-container projects-container">
-            <div class="project-card">
-                <img src="./landing-thumbnails/webpage1.png" alt="blog webpage pic" class="project-image">
-                <div class="card-summary">
-                    <h3 class="card-title">News webpage</h3>
-                    <div class="card-btn-container">
-                        <a href="https://loveriik.github.io/LandingPage1/" target="_blank"><button class="card-btn">Live Demo </button></a>
-                        <a href="https://github.com/Loveriik/LandingPage1" target="_blank"><button class="card-btn">Github</button></a>
-                    </div>
-                </div>
+        <div class="project-card">
+          <img
+            src="./projects-thumbnails/weather.png"
+            alt="weather widget pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">Weather widget</h3>
+            <div class="card-tag-container">
+              <span class="card-tag">JS</span>
+              <span class="card-tag">Location</span>
+              <span class="card-tag">API</span>
             </div>
-
-            <div class="project-card">
-                <img src="./landing-thumbnails/webpage2.png" alt="blog webpage pic" class="project-image">
-                <div class="card-summary">
-                    <h3 class="card-title">Personal blog</h3>
-                    <div class="card-btn-container">
-                        <a href="https://loveriik.github.io/LandingPage2/" target="_blank"><button class="card-btn">Live Demo </button></a>
-                        <a href="https://github.com/Loveriik/LandingPage2" target="_blank"><button class="card-btn">Github</button></a>
-                    </div>
-                </div>
+            <p class="card-paragraph">
+              This project is all about using APIs. Here I used two APIs: one to
+              get a weather forecast and another one to get coordinates of a
+              city the user inputs.
+            </p>
+            <div class="card-btn-container">
+              <a
+                href="https://loveriik.github.io/Weather-widget/"
+                target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a
+                href="https://github.com/Loveriik/Weather-widget"
+                target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
             </div>
-
-            <div class="project-card">
-                <img src="./landing-thumbnails/webpage3.png" alt="blog webpage pic" class="project-image">
-                <div class="card-summary">
-                    <h3 class="card-title">Mail landing</h3>
-                    <div class="card-btn-container">
-                        <a href="https://loveriik.github.io/Landing3/" target="_blank"><button class="card-btn">Live Demo </button></a>
-                        <a href="https://github.com/Loveriik/Landing3" target="_blank"><button class="card-btn">Github</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="./landing-thumbnails/webpage4.png" alt="blog webpage pic" class="project-image">
-                <div class="card-summary">
-                    <h3 class="card-title">Shop landing</h3>
-                    <div class="card-btn-container">
-                        <a href="https://loveriik.github.io/Landing4/" target="_blank"><button class="card-btn">Live Demo </button></a>
-                        <a href="https://github.com/Loveriik/Landing4" target="_blank"><button class="card-btn">Github</button></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <div id="carouselExample" class="carousel slide carousel-vision">
-            <div class="carousel-inner">
-                <div class="carousel-item active project-card">
-                    <img src="./projects-thumbnails/calculator2.png" alt="calculator pic" class="project-image">
-                    <div class="card-summary">
-                        <h3 class="card-title">Calculator</h3>
-                        <p class="card-paragraph">That is the first app I have created myself. After I grasped the basics of CSS, HTML and basic DOM manipuations I deciced to use these knowledge on practise and came up with a modern calculator project. </p>
-                        <div class="card-btn-container">
-                            <a href="https://loveriik.github.io/Calculator-app/" target="_blank"><button class="card-btn">Live Demo</button></a>
-                            <a href="https://github.com/Loveriik/Calculator-app" target="_blank"><button class="card-btn">Github</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item project-card">
-                    <img src="./projects-thumbnails/weather.png" alt="weather widget pic" class="project-image">
-                    <div class="card-summary">
-                        <h3 class="card-title">Weather widget</h3>
-                        <p class="card-paragraph">This project is all about using APIs. Here I used two APIs: one to get a weather forecast and another one to get coordinates of a city the user inputs.</p>
-                        <div class="card-btn-container">
-                            <a href="https://loveriik.github.io/Weather-widget/" target="_blank"><button class="card-btn">Live Demo </button></a>
-                            <a href="https://github.com/Loveriik/Weather-widget" target="_blank"><button class="card-btn">Github</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item project-card">
-                    <img src="./projects-thumbnails/flip-cards.png" alt="flip game pic" class="project-image">
-                    <div class="card-summary">
-                        <h3 class="card-title">Flip cards</h3>
-                        <p class="card-paragraph">This project was inspired by my interest in video games. I was curious to see if I can use JS to create a simple mobile game. When the code was running successfully I added my personal cards design affected by Japanese culture.</p>
-                        <div class="card-btn-container">
-                            <a href="https://loveriik.github.io/Flip-cards/" target="_blank"><button class="card-btn">Live Demo</button></a>
-                            <a href="https://github.com/Loveriik/Flip-cards" target="_blank"><button class="card-btn">Github</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item project-card">
-                    <img src="./landing-thumbnails/webpage5.png" alt="todo app pic" class="project-image">
-                    <div class="card-summary">
-                        <h3 class="card-title">Cake shop webpage</h3>
-                        <div class="card-tag-container">
-                            <span class="card-tag">React</span>
-                            <span class="card-tag">Redux</span>
-                        </div>
-                        <p class="card-paragraph">Cake shop webpage built with the help of React and Redux. Choose the best cake printer/training program for you and don't forget to checkout!</p>
-                        <div class="card-btn-container">
-                            <a href="https://loveriik.github.io/cake-shop/" target="_blank"><button class="card-btn">Live Demo</button></a>
-                            <a href="https://github.com/Loveriik/cake-shop" target="_blank"><button class="card-btn">Github</button></a>
-                        </div>
-                    </div>
-                </div>
-    
+        <div class="project-card">
+          <img
+            src="./projects-thumbnails/flip-cards.png"
+            alt="flip game pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">Flip cards</h3>
+            <div class="card-tag-container">
+              <span class="card-tag">JS</span>
+              <span class="card-tag">CSS</span>
+              <span class="card-tag">Animations</span>
+              <span class="card-tag">Game</span>
             </div>
-
-            <button class="carouselBtn prevBtn" data-bs-target="#carouselExample" data-bs-slide="prev">Previous</button>
-            <button class="carouselBtn nextBtn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">Next</button>
+            <p class="card-paragraph">
+              This project was inspired by my interest in video games. I was
+              curious to see if I can use JS to create a simple mobile game.
+            </p>
+            <p class="card-paragraph">
+              When the code was running successfully I added my personal cards
+              design affected by Japanese culture.
+            </p>
+            <div class="card-btn-container">
+              <a href="https://loveriik.github.io/Flip-cards/" target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a href="https://github.com/Loveriik/Flip-cards" target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
+            </div>
+          </div>
         </div>
+
+        <div class="project-card">
+          <img
+            src="./projects-thumbnails/wheel.png"
+            alt="todo app pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">Wheel of Fortune</h3>
+            <div class="card-tag-container">
+              <span class="card-tag">JS</span>
+              <span class="card-tag">CSS</span>
+              <span class="card-tag">ANIMATIONS</span>
+              <span class="card-tag">Game</span>
+            </div>
+            <p class="card-paragraph">
+              That's my second game project. Here I combined skills from the
+              previous projects.
+            </p>
+            <p class="card-paragraph">
+              Do you consider yourself a lucky person? If yes, then welcome to
+              our Wheel of Fortune game. Here you can not only test your luck
+              but also just have fun.
+            </p>
+            <div class="card-btn-container">
+              <a
+                href="https://loveriik.github.io/Wheel-of-fortune/"
+                target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a
+                href="https://github.com/Loveriik/Wheel-of-fortune"
+                target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing-container projects-container">
+        <div class="project-card">
+          <img
+            src="./landing-thumbnails/webpage1.png"
+            alt="blog webpage pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">News webpage</h3>
+            <div class="card-btn-container">
+              <a href="https://loveriik.github.io/LandingPage1/" target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a href="https://github.com/Loveriik/LandingPage1" target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./landing-thumbnails/webpage2.png"
+            alt="blog webpage pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">Personal blog</h3>
+            <div class="card-btn-container">
+              <a href="https://loveriik.github.io/LandingPage2/" target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a href="https://github.com/Loveriik/LandingPage2" target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./landing-thumbnails/webpage3.png"
+            alt="blog webpage pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">Mail landing</h3>
+            <div class="card-btn-container">
+              <a href="https://loveriik.github.io/Landing3/" target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a href="https://github.com/Loveriik/Landing3" target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project-card">
+          <img
+            src="./landing-thumbnails/webpage4.png"
+            alt="blog webpage pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">Shop landing</h3>
+            <div class="card-btn-container">
+              <a href="https://loveriik.github.io/Landing4/" target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a href="https://github.com/Loveriik/Landing4" target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
+            </div>
+          </div>
+        </div> -->
+
+        <div class="project-card">
+          <img
+            src="./landing-thumbnails/webpage5.png"
+            alt="todo app pic"
+            class="project-image"
+          />
+          <div class="card-summary">
+            <h3 class="card-title">Cake shop</h3>
+            <div class="card-tag-container">
+              <span class="card-tag">React</span>
+              <span class="card-tag">Redux</span>
+            </div>
+            <p class="card-paragraph">
+              Cake shop webpage built with the help of React and Redux. Choose
+              the best cake printer/training program for you and don't forget to
+              checkout!
+            </p>
+            <div class="card-btn-container">
+              <a href="https://loveriik.github.io/cake-shop/" target="_blank"
+                ><button class="card-btn">Live Demo</button></a
+              >
+              <a href="https://github.com/Loveriik/cake-shop" target="_blank"
+                ><button class="card-btn">Github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselExample" class="carousel slide carousel-vision">
+        <div class="carousel-inner">
+          <div class="carousel-item active project-card">
+            <img
+              src="./projects-thumbnails/calculator2.png"
+              alt="calculator pic"
+              class="project-image"
+            />
+            <div class="card-summary">
+              <h3 class="card-title">Calculator</h3>
+              <p class="card-paragraph">
+                That is the first app I have created myself. After I grasped the
+                basics of CSS, HTML and basic DOM manipuations I deciced to use
+                these knowledge on practise and came up with a modern calculator
+                project.
+              </p>
+              <div class="card-btn-container">
+                <a
+                  href="https://loveriik.github.io/Calculator-app/"
+                  target="_blank"
+                  ><button class="card-btn">Live Demo</button></a
+                >
+                <a
+                  href="https://github.com/Loveriik/Calculator-app"
+                  target="_blank"
+                  ><button class="card-btn">Github</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item project-card">
+            <img
+              src="./projects-thumbnails/weather.png"
+              alt="weather widget pic"
+              class="project-image"
+            />
+            <div class="card-summary">
+              <h3 class="card-title">Weather widget</h3>
+              <p class="card-paragraph">
+                This project is all about using APIs. Here I used two APIs: one
+                to get a weather forecast and another one to get coordinates of
+                a city the user inputs.
+              </p>
+              <div class="card-btn-container">
+                <a
+                  href="https://loveriik.github.io/Weather-widget/"
+                  target="_blank"
+                  ><button class="card-btn">Live Demo</button></a
+                >
+                <a
+                  href="https://github.com/Loveriik/Weather-widget"
+                  target="_blank"
+                  ><button class="card-btn">Github</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item project-card">
+            <img
+              src="./projects-thumbnails/flip-cards.png"
+              alt="flip game pic"
+              class="project-image"
+            />
+            <div class="card-summary">
+              <h3 class="card-title">Flip cards</h3>
+              <p class="card-paragraph">
+                This project was inspired by my interest in video games. I was
+                curious to see if I can use JS to create a simple mobile game.
+                When the code was running successfully I added my personal cards
+                design affected by Japanese culture.
+              </p>
+              <div class="card-btn-container">
+                <a href="https://loveriik.github.io/Flip-cards/" target="_blank"
+                  ><button class="card-btn">Live Demo</button></a
+                >
+                <a href="https://github.com/Loveriik/Flip-cards" target="_blank"
+                  ><button class="card-btn">Github</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item project-card">
+            <img
+              src="./landing-thumbnails/webpage5.png"
+              alt="todo app pic"
+              class="project-image"
+            />
+            <div class="card-summary">
+              <h3 class="card-title">Cake shop webpage</h3>
+              <div class="card-tag-container">
+                <span class="card-tag">React</span>
+                <span class="card-tag">Redux</span>
+              </div>
+              <p class="card-paragraph">
+                Cake shop webpage built with the help of React and Redux. Choose
+                the best cake printer/training program for you and don't forget
+                to checkout!
+              </p>
+              <div class="card-btn-container">
+                <a href="https://loveriik.github.io/cake-shop/" target="_blank"
+                  ><button class="card-btn">Live Demo</button></a
+                >
+                <a href="https://github.com/Loveriik/cake-shop" target="_blank"
+                  ><button class="card-btn">Github</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carouselBtn prevBtn"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          Previous
+        </button>
+        <button
+          class="carouselBtn nextBtn"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          Next
+        </button>
+      </div>
     </section>
 
     <section class="background form-section" id="contact">
-        <div class="module">
-            <div class="messsage-container">
-                <button class="module-btn">Close</button>
-                <h2 class="message-h2">E-mail was successfully sent!</h2>
-                <p class="message-p">Thank you for your interest. I will contact you as soon as I see your mail.
-                    <br>
-                    <br>Have a nice day!</p>
-            </div>
+      <div class="module">
+        <div class="messsage-container">
+          <button class="module-btn">Close</button>
+          <h2 class="message-h2">E-mail was successfully sent!</h2>
+          <p class="message-p">
+            Thank you for your interest. I will contact you as soon as I see
+            your mail.
+            <br />
+            <br />Have a nice day!
+          </p>
         </div>
-        <form class="form"> 
-            <div class="form-text-container">
-                <h4 class="form-h4 header-h4">&ltcontact&gt</h4>
-                <p class="paragraph form-paragraph">
-                    If you find my portfolio appealing and would like to talk in person - fill in the contact form and press the submit button.
-                    I will get in touch as soon as I receive your letter.
-                    <br>
-                    <br>Thanks for your time and have a nice day.
-                </p>
-                <img src="./images/form.svg" class="form-img">
-            </div>
+      </div>
+      <form class="form">
+        <div class="form-text-container">
+          <h4 class="form-h4 header-h4">&ltcontact&gt</h4>
+          <p class="paragraph form-paragraph">
+            If you find my portfolio appealing and would like to talk in person
+            - fill in the contact form and press the submit button. I will get
+            in touch as soon as I receive your letter.
+            <br />
+            <br />Thanks for your time and have a nice day.
+          </p>
+          <img src="./images/form.svg" class="form-img" />
+        </div>
 
-            <div class="form-input-container">
-                <div class="input-box">
-                    <label for="text-input" class="form-label">Name</label>
-                    <input type="text" id="text-input" class="form-input">
-                    <div class="name-error error-message"></div>
-                </div>
-         
-                <div class="input-box">
-                    <label for="form-mail" class="form-label">E-mail</label>
-                    <input type="text" id="form-mail" class="form-input">
-                    <div class="email-error error-message"></div>
-                </div>
+        <div class="form-input-container">
+          <div class="input-box">
+            <label for="text-input" class="form-label">Name</label>
+            <input type="text" id="text-input" class="form-input" />
+            <div class="name-error error-message"></div>
+          </div>
 
-                <div class="input-box">
-                    <label for="form-textArea" class="form-label">Message</label>
-                    <textarea id="form-textArea" cols="30" rows="5" class="form-input"></textarea>
-                    <div class="message-error"></div>
-                </div>
+          <div class="input-box">
+            <label for="form-mail" class="form-label">E-mail</label>
+            <input type="text" id="form-mail" class="form-input" />
+            <div class="email-error error-message"></div>
+          </div>
 
-                <input type="submit" value="Submit" class="submit-btn">
-            </div>
-        </form>
-        <footer class="footer">
-            <span class="footer-logo">AleksanderLavrov</span>
-            <div class="links-container links-footer">
-                <a href="https://www.linkedin.com/in/aleksandr-lavrov/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl link footer-link"></i></a>
-                <a href="https://github.com/Loveriik" target="_blank"><i class="fa-brands fa-github fa-2xl link footer-link" ></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100081223609217" target="_blank"><i class="fa-brands fa-facebook fa-2xl link footer-link"></i></a>
-            </div>
-        </footer>
+          <div class="input-box">
+            <label for="form-textArea" class="form-label">Message</label>
+            <textarea
+              id="form-textArea"
+              cols="30"
+              rows="5"
+              class="form-input"
+            ></textarea>
+            <div class="message-error"></div>
+          </div>
+
+          <input type="submit" value="Submit" class="submit-btn" />
+        </div>
+      </form>
+      <footer class="footer">
+        <span class="footer-logo">AleksanderLavrov</span>
+        <div class="links-container links-footer">
+          <a
+            href="https://www.linkedin.com/in/aleksandr-lavrov/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2xl link footer-link"></i
+          ></a>
+          <a href="https://github.com/Loveriik" target="_blank"
+            ><i class="fa-brands fa-github fa-2xl link footer-link"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100081223609217"
+            target="_blank"
+            ><i class="fa-brands fa-facebook fa-2xl link footer-link"></i
+          ></a>
+        </div>
+      </footer>
     </section>
-</body>
+  </body>
 </html>

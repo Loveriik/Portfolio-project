@@ -3,7 +3,7 @@
 const btnBurger = document.getElementById('burger')
 const navigation = document.querySelector('.nav-list')
 
-btnBurger.addEventListener('click', function() {
+btnBurger.addEventListener('click', function () {
     btnBurger.classList.toggle('open')
     navigation.classList.toggle('slide')
 })
@@ -13,8 +13,8 @@ btnBurger.addEventListener('click', function() {
 
 const navLinks = document.querySelectorAll('.nav-link')
 
-navLinks.forEach( link => {
-    link.addEventListener('click', function() {
+navLinks.forEach(link => {
+    link.addEventListener('click', function () {
         btnBurger.classList.remove('open')
         navigation.classList.remove('slide')
     })
@@ -26,11 +26,11 @@ const reveals = document.querySelectorAll('.reveal')
 const motions = document.querySelectorAll('.motion')
 
 const appearOptions = {
-    threshold:0.25,
-    rootMargin:'0px 0px -200px 0px'
+    threshold: 0.25,
+    rootMargin: '0px 0px -200px 0px'
 }
 
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return
@@ -69,7 +69,7 @@ function landingChange(value) {
 
 const scrollUpBtn = document.querySelector('.scroll-up')
 
-window.onscroll = function() {
+window.onscroll = function () {
     if (window.pageYOffset > 700) {
         scrollUpBtn.style.transform = 'scale(1)'
     } else {
@@ -143,7 +143,7 @@ form.addEventListener('submit', (e) => {
         return false
     }
 
-    let body =`
+    let body = `
     <b>Name: </b> ${textInput.value}
     <br>
     <b>Email: </b> ${mailInput.value}
@@ -153,16 +153,14 @@ form.addEventListener('submit', (e) => {
     <br>
     `
 
-    /* Displaying your password is not safe and I know it but for the purpose of this webpage I do not want to create a remote server */
-
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "sancho2140@gmail.com",
-        Password : "8C4F712E3DADB3E2DB5B9921525EDF762B83",
-        To : 'sancho2140@gmail.com',
-        From : "sancho2140@gmail.com",
-        Subject : 'Portfolio form: E-mail from ' + mailInput.value,
-        Body : body
+        Host: "smtp.elasticemail.com",
+        Username: "sancho2140@gmail.com",
+        Password: "8C4F712E3DADB3E2DB5B9921525EDF762B83",
+        To: 'sancho2140@gmail.com',
+        From: "sancho2140@gmail.com",
+        Subject: 'Portfolio form: E-mail from ' + mailInput.value,
+        Body: body
     }).then(
         mailSuccess()
     );
